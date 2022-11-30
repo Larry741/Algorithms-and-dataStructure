@@ -5,7 +5,7 @@ class Node {
   }
 }
 
-class SinglyLinkedList {
+export class SinglyLinkedList {
   constructor() {
     this.head;
     this.tail;
@@ -61,7 +61,7 @@ class SinglyLinkedList {
     return removedNode;
   }
 
-  unShift(val) {
+  unshift(val) {
     const newNode = new Node(val);
 
     if (!this.head) {
@@ -145,11 +145,11 @@ class SinglyLinkedList {
   }
 }
 
-const list = new SinglyLinkedList();
-list.push(10);
-list.push(20);
-list.push(30);
-list.push(40);
+// const list = new SinglyLinkedList();
+// list.push(10);
+// list.push(20);
+// list.push(30);
+// list.push(40);
 
 // console.log(list.unShift(10));
 // console.log(list.shift());
@@ -158,6 +158,6 @@ list.push(40);
 // console.log(list.set(5, 50));
 // list.insert(3, 50);
 // console.log(list.remove(0));
-list.reverse();
-console.log(list.head);
-console.log(list.head.next.next);
+// list.reverse();
+// console.log(list.head);
+// console.log(list.head.next.next);

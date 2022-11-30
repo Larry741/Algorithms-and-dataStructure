@@ -38,7 +38,7 @@ class Stack {
   }
 }
 
-const stack = new Stack();
+// const stack = new Stack();
 
 // console.log(stack.push(10));
 // console.log(stack.push(20));
@@ -50,7 +50,7 @@ const stack = new Stack();
 
 // console.log(stack);
 
-class Queue {
+export class Queue {
   constructor() {
     this.first;
     this.last;
@@ -78,18 +78,8 @@ class Queue {
     this.length--
     if (this.length === 0) this.last = null
 
-    return removedNode.val
+    return removedNode
   }
 }
 
-const queue = new Queue();
-
-console.log(queue.push(10));
-console.log(queue.push(20));
-console.log(queue.push(30));
-console.log(queue.push(40));
-console.log(queue.push(50));
-
-queue.pop();
-
-console.log(queue);
+// const queue = new Queue();
